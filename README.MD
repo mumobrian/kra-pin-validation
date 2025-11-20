@@ -1,7 +1,6 @@
 # KRA PIN Validation System
 
-A simple PHP application that validates Kenyan KRA PINs and stores registration data. Perfect for learning PHP form handling, validation, and file operations.
-
+A simple PHP application to validate Kenyan KRA PINs, store registration data, and prevent duplicates. Ideal for learning PHP form handling, validation, and file operations.
 ---
 
 ## 📋 Overview
@@ -12,62 +11,38 @@ This project provides a clean web interface to:
 - Prevent duplicate entries
 - Store records in a text file
 - Display registration statistics
+---
+
+## Features
+- User-friendly form interface  
+- Full validation: name, email, KRA PIN format  
+- Prevents duplicate KRA PIN entries  
+- Stores data in a text file  
+- Displays registration statistics  
+- Clean, responsive design  
 
 ---
 
-## ✨ Features
-- ✅ User-friendly form interface  
-- ✅ Full validation (name, email, KRA PIN format)  
-- ✅ Duplicate KRA PIN prevention  
-- ✅ Data storage in text file  
-- ✅ Registration statistics  
-- ✅ Clean, responsive design  
+## Technologies
+PHP 7+ / 8+, HTML5, CSS3, XAMPP, VS Code  
 
 ---
 
-## 🛠 Technologies
-- PHP 7+ or PHP 8+  
-- HTML5 + CSS3  
-- XAMPP (Apache + PHP)  
-- VS Code (recommended editor)  
-
----
-## 📁 Project Structure
-kra-pin-validation/
-│
-├── index.php # Main form interface
-├── process.php # Validation and data processing
-├── kra_data.txt # Data storage (auto-created)
-└── README.md # This file
+## Quick Start
+1. Place project in `C:\xampp\htdocs\kra-pin-validation`  
+2. Start Apache via XAMPP Control Panel  
+3. Access: [http://localhost/kra-pin-validation/index.php](http://localhost/kra-pin-validation/index.php)  
 
 ---
 
-## 🚀 Quick Start
+## KRA PIN Format
+- Example: `A123456789B` (1 uppercase, 9 digits, 1 uppercase)  
+- Regex: `/^[A-Z]{1}[0-9]{9}[A-Z]{1}$/`  
 
-### Prerequisites
-- XAMPP installed and running  
-- VS Code  
+---
 
-### Installation Steps
-1. Navigate to the XAMPP directory:
-   ```bash
-   C:\xampp\htdocs\
-Create project folder:
+## Security Note
+For production: use a database, prepared statements, and sanitize inputs.  
 
-mkdir kra-pin-validation
+---
 
-
-Add project files:
-Copy index.php and process.php to the folder.
-kra_data.txt will be created automatically.
-
-Start Apache:
-
-Open XAMPP Control Panel
-
-Click Start next to Apache
-
-Access the application:
-
-http://localhost/kra-pin-validation/index.php
-## 📁 Project Structure
