@@ -1,6 +1,6 @@
 # KRA PIN Validation System
 
-A simple PHP application to validate Kenyan KRA PINs, store registration data, and prevent duplicates. Ideal for learning PHP form handling, validation, and file operations.
+A simple PHP application to validate Kenyan KRA PINs, store registration data, and prevent duplicates.
 ---
 
 ## 📋 Overview
